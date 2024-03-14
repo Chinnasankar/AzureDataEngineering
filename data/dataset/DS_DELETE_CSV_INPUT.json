@@ -1,0 +1,20 @@
+{
+	"name": "DS_DELETE_CSV_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DELETE_CSV_INPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "employee_data.csv",
+				"folderPath": "csv",
+				"fileSystem": "adlsinput"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

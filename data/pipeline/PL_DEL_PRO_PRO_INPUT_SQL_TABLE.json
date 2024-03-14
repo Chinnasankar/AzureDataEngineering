@@ -1,0 +1,56 @@
+{
+	"name": "PL_DEL_PRO_PRO_INPUT_SQL_TABLE",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[PERSONDATA4]",
+					"storedProcedureParameters": {
+						"BusinessEntityID": {
+							"value": {
+								"value": "@pipeline().parameters.Id",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": {
+								"value": "@pipeline().parameters.Firstname",
+								"type": "Expression"
+							},
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_LOOKUP_PRO_INPUT_SQL_TABLE",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"Id": {
+				"type": "int",
+				"defaultValue": 2
+			},
+			"Firstname": {
+				"type": "string",
+				"defaultValue": "samy"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-03-10T05:50:45Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,23 @@
+{
+	"name": "DS_MET_FILE_MOVE2_IN",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MET_FILE_MOVE2_IN",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "filtertext"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

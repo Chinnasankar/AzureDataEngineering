@@ -1,0 +1,147 @@
+{
+	"name": "PL_JSON_CSV",
+	"properties": {
+		"activities": [
+			{
+				"name": "CPY_JSON_CSV",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['Name']"
+								},
+								"sink": {
+									"name": "Name"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Mobile']"
+								},
+								"sink": {
+									"name": "Mobile",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Boolean']"
+								},
+								"sink": {
+									"name": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Pets'][0]"
+								},
+								"sink": {
+									"name": "items"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Address']['Permanent address']"
+								},
+								"sink": {
+									"name": "Permanent address"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Address']['current Address']"
+								},
+								"sink": {
+									"name": "current Address"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_JSON_CSV_INPUT",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_JSON_CSV_OUTPUT",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "DELETE_JSON",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "CPY_JSON_CSV",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_DELETE_JSON_INPUT",
+						"type": "DatasetReference"
+					},
+					"enableLogging": false,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-02-29T08:37:54Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

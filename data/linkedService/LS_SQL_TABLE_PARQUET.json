@@ -1,0 +1,16 @@
+{
+	"name": "LS_SQL_TABLE_PARQUET",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=VTIPL-C-PC927-L;initial catalog=AdventureWorks2019;user id=xx",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhYzhlYTAwZS02MGM1LTRlMzYtYWRiNy01NDYyZmZkMDY0MzUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

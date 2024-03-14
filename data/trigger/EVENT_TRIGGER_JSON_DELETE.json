@@ -1,0 +1,25 @@
+{
+	"name": "EVENT_TRIGGER_JSON_DELETE",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_JSON_CSV",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adlsinput/blobs/json/",
+			"blobPathEndsWith": ".json",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/360d6413-8abc-409f-8b5b-4466aed46632/resourceGroups/rg_data_engineer/providers/Microsoft.Storage/storageAccounts/adlsdataengineers",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

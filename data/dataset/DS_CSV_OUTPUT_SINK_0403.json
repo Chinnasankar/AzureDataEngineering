@@ -1,0 +1,38 @@
+{
+	"name": "DS_CSV_OUTPUT_SINK_0403",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_CSV_OUTPUT_SINK_0403",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileDir": {
+				"type": "string"
+			},
+			"FileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().FileDir",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

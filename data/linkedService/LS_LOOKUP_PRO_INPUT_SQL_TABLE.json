@@ -1,0 +1,16 @@
+{
+	"name": "LS_LOOKUP_PRO_INPUT_SQL_TABLE",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=VTIPL-C-PC927-L;initial catalog=AdventureWorks2019;user id=xx",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxNmQxMDQ4Zi01NGYzLTQwZDMtODQwNC0xODhiYzVhZjk3NTIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

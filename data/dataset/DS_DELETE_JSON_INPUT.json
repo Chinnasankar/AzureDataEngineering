@@ -1,0 +1,20 @@
+{
+	"name": "DS_DELETE_JSON_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DELETE_JSON_INPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "sample.json",
+				"folderPath": "json",
+				"fileSystem": "adlsinput"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

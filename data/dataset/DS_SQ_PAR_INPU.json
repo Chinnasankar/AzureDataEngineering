@@ -1,0 +1,17 @@
+{
+	"name": "DS_SQ_PAR_INPU",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQ_PAR_INPU",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "Person",
+			"table": "Person"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
