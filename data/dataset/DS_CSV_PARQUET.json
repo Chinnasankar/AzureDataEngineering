@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "2024-01-10.csv",
 				"fileSystem": "adlsoutput"
 			},
 			"columnDelimiter": ",",
