@@ -1,0 +1,360 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "dataengineersadf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage4_accountKey": {
+			"value": ""
+		},
+		"DS_CSV_INPUT_0403_accountKey": {
+			"value": ""
+		},
+		"DS_CSV_LASTMODIFIED_FILE_OUT_accountKey": {
+			"value": ""
+		},
+		"DS_CSV_LASTMODIFIED_FILE_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"DS_CSV_OUTPUT_SINK_0403_accountKey": {
+			"value": ""
+		},
+		"DS_OUTPUT_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"DS_SQL_TABLE_connectionString": {
+			"value": ""
+		},
+		"DS_TEXT_1_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_accountKey": {
+			"value": ""
+		},
+		"LS1_accountKey": {
+			"value": ""
+		},
+		"LS_COPY_CSV_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_LASTMODIFIED_FILE_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_SQL_TABLE_accountKey": {
+			"value": ""
+		},
+		"LS_DATAFLOW_INPUT_CUSTOMER_accountKey": {
+			"value": ""
+		},
+		"LS_DATAFLOW_INPUT_ORDER_accountKey": {
+			"value": ""
+		},
+		"LS_DATAFLOW_OUTPUT_CUSTOMER_ORDER_accountKey": {
+			"value": ""
+		},
+		"LS_DELETE_CSV_FILE_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_DELETE_CSV_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_DELETE_JSON_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_ERRORLOS_connectionString": {
+			"value": ""
+		},
+		"LS_GETMETADATA_FILTER_accountKey": {
+			"value": ""
+		},
+		"LS_INPUT_EXCEL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_CSV_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_CSV_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_ERROR_LOG_OUTPUT_connectionString": {
+			"value": ""
+		},
+		"LS_LOOKUP_PRO_INPUT_SQL_TABLE_connectionString": {
+			"value": ""
+		},
+		"LS_META_accountKey": {
+			"value": ""
+		},
+		"LS_METADATA_FILTERE__accountKey": {
+			"value": ""
+		},
+		"LS_MET_FILE_MOVE2_IN_accountKey": {
+			"value": ""
+		},
+		"LS_MET_FILE_MOVE_IN_accountKey": {
+			"value": ""
+		},
+		"LS_MET_PARQUET_IN_accountKey": {
+			"value": ""
+		},
+		"LS_MET_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_MET_TXT_IN_accountKey": {
+			"value": ""
+		},
+		"LS_OUTPUT_CSV_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_OUTPUT_EXCEL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_1_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_SINK1_accountKey": {
+			"value": ""
+		},
+		"LS_PQRUET_FILTER_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_REST_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_SCH_DELETE_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_SINK_GETMETADATA_FILTER_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_INPUT_PARQUET_connectionString": {
+			"value": ""
+		},
+		"LS_SQL_TABLE_connectionString": {
+			"value": ""
+		},
+		"LS_SQL_TABLE_PARQUET_connectionString": {
+			"value": ""
+		},
+		"LS_SQ_PAR_INPU_connectionString": {
+			"value": ""
+		},
+		"LS_SQ_PAR_OUTPU_accountKey": {
+			"value": ""
+		},
+		"LS_TEXT_FILTER_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_TEXT_FILTER_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_XL_PAR_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"SQL_PARQUET_OUT_LS_accountKey": {
+			"value": ""
+		},
+		"SQL_TABLE_LS_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": ""
+		},
+		"SqlServerTable1_ls_input_connectionString": {
+			"value": ""
+		},
+		"linkedService1_connectionString": {
+			"value": ""
+		},
+		"lls_sql_Parquet1_accountKey": {
+			"value": ""
+		},
+		"ls_Parquet1_sql_output_accountKey": {
+			"value": ""
+		},
+		"ls_SqlServerTable1_connectionString": {
+			"value": ""
+		},
+		"ls_sql_Parquet1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage4_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"DS_CSV_INPUT_0403_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"DS_CSV_LASTMODIFIED_FILE_OUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"DS_CSV_LASTMODIFIED_FILE_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"DS_CSV_OUTPUT_SINK_0403_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"DS_OUTPUT_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"DS_TEXT_1_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS1_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_COPY_CSV_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_CSV_LASTMODIFIED_FILE_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_CSV_SQL_TABLE_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_DATAFLOW_INPUT_CUSTOMER_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_DATAFLOW_INPUT_ORDER_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_DATAFLOW_OUTPUT_CUSTOMER_ORDER_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_DELETE_CSV_FILE_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_DELETE_CSV_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_DELETE_JSON_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_FILTER_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_INPUT_EXCEL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_JSON_CSV_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_JSON_CSV_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_META_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_METADATA_FILTERE__properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_MET_FILE_MOVE2_IN_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_MET_FILE_MOVE_IN_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_MET_PARQUET_IN_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_MET_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_MET_TXT_IN_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_CSV_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_EXCEL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_1_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_SINK1_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_PQRUET_FILTER_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_REST_PARQUET_INPUT_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/5yDVOt/data"
+		},
+		"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_SCH_DELETE_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_SINK_GETMETADATA_FILTER_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_SQ_PAR_OUTPU_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_TEXT_FILTER_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_TEXT_FILTER_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"LS_XL_PAR_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"SQL_PARQUET_OUT_LS_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"lls_sql_Parquet1_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"ls_Parquet1_sql_output_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"ls_sql_Parquet1_properties_typeProperties_url": {
+			"value": "https://adlsdataengineers.dfs.core.windows.net/"
+		},
+		"EVENT_TRIGGER_JSON_DELETE_properties_typeProperties_scope": {
+			"value": "/subscriptions/360d6413-8abc-409f-8b5b-4466aed46632/resourceGroups/rg_data_engineer/providers/Microsoft.Storage/storageAccounts/adlsdataengineers"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
