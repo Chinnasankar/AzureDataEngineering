@@ -11,7 +11,16 @@
 		"LS_SQL_PARQUET_TABLE_INPUT_connectionString": {
 			"value": ""
 		},
+		"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"DS_RESTAPI_CUSTOMER_INPUT_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/1NEw9d/data"
+		},
+		"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlssiecom.dfs.core.windows.net/"
 		}
 	}

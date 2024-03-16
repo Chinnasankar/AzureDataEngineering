@@ -15,7 +15,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_SQL_PARQUET_TABLE_INPUT'"
 		},
+		"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT'"
+		},
 		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"DS_RESTAPI_CUSTOMER_INPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/1NEw9d/data"
+		},
+		"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlssiecom.dfs.core.windows.net/"
 		},
@@ -49,11 +61,20 @@
 					"DS_SQL_PARQUET_OUTPUT_accountKey": {
 						"value": "[parameters('DS_SQL_PARQUET_OUTPUT_accountKey')]"
 					},
+					"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_accountKey')]"
+					},
 					"LS_SQL_PARQUET_TABLE_INPUT_connectionString": {
 						"value": "[parameters('LS_SQL_PARQUET_TABLE_INPUT_connectionString')]"
 					},
 					"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"DS_RESTAPI_CUSTOMER_INPUT_properties_typeProperties_url": {
+						"value": "[parameters('DS_RESTAPI_CUSTOMER_INPUT_properties_typeProperties_url')]"
+					},
+					"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					}
 				}
 			},
