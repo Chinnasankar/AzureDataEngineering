@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfecom"
+		},
+		"DS_SQL_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_PARQUET_TABLE_INPUT_connectionString": {
+			"value": ""
+		},
+		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
