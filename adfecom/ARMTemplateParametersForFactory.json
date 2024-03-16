@@ -8,20 +8,38 @@
 		"DS_SQL_PARQUET_OUTPUT_accountKey": {
 			"value": ""
 		},
-		"LS_SQL_PARQUET_TABLE_INPUT_connectionString": {
+		"LLS_MANNUAL_CSV_PARQUET_INPUT_connectionString": {
+			"value": ""
+		},
+		"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_MANNUAL_CSV_PARQUET_OUTPUT_accountKey": {
 			"value": ""
 		},
 		"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_accountKey": {
 			"value": ""
 		},
-		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
-			"value": "https://adlssiecom.dfs.core.windows.net/"
+		"LS_SQL_PARQUET_TABLE_INPUT_connectionString": {
+			"value": ""
 		},
 		"DS_RESTAPI_CUSTOMER_INPUT_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/1NEw9d/data"
 		},
+		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url": {
+			"value": "https://adlsrawecom.dfs.core.windows.net/"
+		},
+		"LS_MANNUAL_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
 		"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"SCH_MANNUAL_CSV_PARQUET_properties_typeProperties_scope": {
+			"value": "/subscriptions/360d6413-8abc-409f-8b5b-4466aed46632/resourceGroups/rg_ecom_storagegroup/providers/Microsoft.Storage/storageAccounts/blobecom"
 		}
 	}
 }
