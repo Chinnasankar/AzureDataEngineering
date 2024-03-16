@@ -1,0 +1,25 @@
+{
+	"name": "SCH_RESTAPI_CUSTOMER_PARQUET",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_REST_API_PARQUET_CUSTOMER",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-03-16T16:53:00",
+				"endTime": "2024-03-16T16:58:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
