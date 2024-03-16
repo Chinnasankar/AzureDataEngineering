@@ -1,0 +1,9 @@
+{
+	"name": "adfecom",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "204aad98-57d0-45c4-a96f-e0ec294ecc06",
+		"tenantId": "311a1447-0e09-4d2e-8230-d823a610203a"
+	}
+}
