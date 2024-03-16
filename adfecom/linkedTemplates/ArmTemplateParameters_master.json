@@ -11,6 +11,9 @@
 		"LLS_MANNUAL_CSV_PARQUET_INPUT_connectionString": {
 			"value": ""
 		},
+		"LS_BLOB_CSV_IN_connectionString": {
+			"value": ""
+		},
 		"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
 			"value": ""
 		},
