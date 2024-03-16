@@ -47,7 +47,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_MANNUAL_CSV_PARQUET_INPUT",
+						"referenceName": "DS_BLOB_CSV_IN",
 						"type": "DatasetReference"
 					}
 				],
