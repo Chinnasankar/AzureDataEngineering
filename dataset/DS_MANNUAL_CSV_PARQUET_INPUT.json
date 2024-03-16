@@ -1,0 +1,22 @@
+{
+	"name": "DS_MANNUAL_CSV_PARQUET_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LLS_MANNUAL_CSV_PARQUET_INPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "customer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
