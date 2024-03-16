@@ -1,0 +1,24 @@
+{
+	"name": "SCH_MANNUAL_CSV_PARQUET",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_MANNUAL_CSV_PARQUET",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/customer/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/360d6413-8abc-409f-8b5b-4466aed46632/resourceGroups/rg_ecom_storagegroup/providers/Microsoft.Storage/storageAccounts/blobecom",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
