@@ -14,6 +14,12 @@
 		"LS_BLOB_CSV_IN_connectionString": {
 			"value": ""
 		},
+		"LS_GETMETADATA_INPUT_accountKey": {
+			"value": ""
+		},
+		"LS_GETMETADATA_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
 			"value": ""
 		},
@@ -30,6 +36,12 @@
 			"value": "https://retoolapi.dev/1NEw9d/data"
 		},
 		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_INPUT_properties_typeProperties_url": {
+			"value": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlssiecom.dfs.core.windows.net/"
 		},
 		"LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url": {

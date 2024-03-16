@@ -19,6 +19,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_BLOB_CSV_IN'"
 		},
+		"LS_GETMETADATA_INPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_GETMETADATA_INPUT'"
+		},
+		"LS_GETMETADATA_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_GETMETADATA_OUTPUT'"
+		},
 		"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_MANNUAL_CSV_PARQUET_INPUT'"
@@ -40,6 +48,14 @@
 			"defaultValue": "https://retoolapi.dev/1NEw9d/data"
 		},
 		"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_INPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssiecom.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlssiecom.dfs.core.windows.net/"
 		},
@@ -95,6 +111,12 @@
 					"LS_BLOB_CSV_IN_connectionString": {
 						"value": "[parameters('LS_BLOB_CSV_IN_connectionString')]"
 					},
+					"LS_GETMETADATA_INPUT_accountKey": {
+						"value": "[parameters('LS_GETMETADATA_INPUT_accountKey')]"
+					},
+					"LS_GETMETADATA_OUTPUT_accountKey": {
+						"value": "[parameters('LS_GETMETADATA_OUTPUT_accountKey')]"
+					},
 					"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
 						"value": "[parameters('LS_MANNUAL_CSV_PARQUET_INPUT_accountKey')]"
 					},
@@ -113,6 +135,12 @@
 					"DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('DS_SQL_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					},
+					"LS_GETMETADATA_INPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_GETMETADATA_INPUT_properties_typeProperties_url')]"
+					},
+					"LS_GETMETADATA_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_GETMETADATA_OUTPUT_properties_typeProperties_url')]"
+					},
 					"LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url')]"
 					},
@@ -121,9 +149,6 @@
 					},
 					"LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT_properties_typeProperties_url')]"
-					},
-					"SCH_MANNUAL_CSV_PARQUET_properties_typeProperties_scope": {
-						"value": "[parameters('SCH_MANNUAL_CSV_PARQUET_properties_typeProperties_scope')]"
 					}
 				}
 			},
@@ -142,6 +167,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"SCH_MANNUAL_CSV_PARQUET_properties_typeProperties_scope": {
+						"value": "[parameters('SCH_MANNUAL_CSV_PARQUET_properties_typeProperties_scope')]"
 					}
 				}
 			},
