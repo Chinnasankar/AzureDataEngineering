@@ -1,0 +1,17 @@
+{
+	"name": "LS_KEY_SQL_CUSTOMER_PARQUER",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "MyDBpassword"
+			}
+		}
+	}
+}
