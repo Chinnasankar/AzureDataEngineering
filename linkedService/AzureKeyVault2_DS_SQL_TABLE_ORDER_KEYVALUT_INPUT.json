@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault2_DS_SQL_TABLE_ORDER_KEYVALUT_INPUT",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://keyvalut00004.vault.azure.net/"
+		}
+	}
+}
