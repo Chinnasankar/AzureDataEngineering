@@ -27,10 +27,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_GETMETADATA_OUTPUT'"
 		},
-		"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_MANNUAL_CSV_PARQUET_INPUT'"
-		},
 		"LS_MANNUAL_CSV_PARQUET_OUTPUT_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_MANNUAL_CSV_PARQUET_OUTPUT'"
@@ -58,10 +54,6 @@
 		"LS_GETMETADATA_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlssiecom.dfs.core.windows.net/"
-		},
-		"LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adlsrawecom.dfs.core.windows.net/"
 		},
 		"LS_MANNUAL_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
@@ -163,23 +155,6 @@
 					"accountKey": {
 						"type": "SecureString",
 						"value": "[parameters('LS_GETMETADATA_OUTPUT_accountKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/LS_MANNUAL_CSV_PARQUET_INPUT')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('LS_MANNUAL_CSV_PARQUET_INPUT_accountKey')]"
 					}
 				}
 			},
@@ -722,6 +697,82 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DS_GETMETADATA_INPUT')]",
 				"[concat(variables('factoryId'), '/datasets/DS_GETMETADATA_OUTPUT')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/PL_MANNUAL_CSV_PARQUET')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Copy data1",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "DelimitedTextSource",
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
+									"wildcardFileName": "*",
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							},
+							"sink": {
+								"type": "ParquetSink",
+								"storeSettings": {
+									"type": "AzureBlobFSWriteSettings"
+								},
+								"formatSettings": {
+									"type": "ParquetWriteSettings"
+								}
+							},
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"typeConversion": true,
+								"typeConversionSettings": {
+									"allowDataTruncation": true,
+									"treatBooleanAsNumber": false
+								}
+							}
+						},
+						"inputs": [
+							{
+								"referenceName": "DS_BLOB_CSV_IN",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "DS_MANNUAL_CSV_PARQUET_OUTPUT",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {}
+				},
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/DS_BLOB_CSV_IN')]",
+				"[concat(variables('factoryId'), '/datasets/DS_MANNUAL_CSV_PARQUET_OUTPUT')]"
 			]
 		}
 	]

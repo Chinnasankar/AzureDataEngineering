@@ -20,9 +20,6 @@
 		"LS_GETMETADATA_OUTPUT_accountKey": {
 			"value": ""
 		},
-		"LS_MANNUAL_CSV_PARQUET_INPUT_accountKey": {
-			"value": ""
-		},
 		"LS_MANNUAL_CSV_PARQUET_OUTPUT_accountKey": {
 			"value": ""
 		},
@@ -43,9 +40,6 @@
 		},
 		"LS_GETMETADATA_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlssiecom.dfs.core.windows.net/"
-		},
-		"LS_MANNUAL_CSV_PARQUET_INPUT_properties_typeProperties_url": {
-			"value": "https://adlsrawecom.dfs.core.windows.net/"
 		},
 		"LS_MANNUAL_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlssiecom.dfs.core.windows.net/"
