@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault1_LS_SQL_TABLE_KEYVAULT_CUSTOMER",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://azurekey001.vault.azure.net/"
+		}
+	}
+}
