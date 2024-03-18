@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault5_SQL_TABLE_ORDER_KEYVAULT",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://keeyvaalut.vault.azure.net/"
+		}
+	}
+}
