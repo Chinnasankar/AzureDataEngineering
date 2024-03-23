@@ -1,10 +1,6 @@
 {
 	"name": "DS_RESTAPI_CUSTOMER_PARQUET_OUTPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_RESTAPI_CUSTOMER_PARQUET_OUTPUT",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

@@ -1,10 +1,6 @@
 {
 	"name": "DS_RESTAPI_CUSTOMER_INPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "DS_RESTAPI_CUSTOMER_INPUT",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
