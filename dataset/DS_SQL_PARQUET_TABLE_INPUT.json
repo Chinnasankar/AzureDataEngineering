@@ -1,8 +1,0 @@
-{
-	"name": "DS_SQL_PARQUET_TABLE_INPUT",
-	"properties": {
-		"annotations": [],
-		"type": "SqlServerTable",
-		"schema": []
-	}
-}
