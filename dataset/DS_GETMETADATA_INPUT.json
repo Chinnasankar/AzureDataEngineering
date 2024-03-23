@@ -1,10 +1,6 @@
 {
 	"name": "DS_GETMETADATA_INPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_GETMETADATA_INPUT",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
