@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntime1dfactorecom",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
