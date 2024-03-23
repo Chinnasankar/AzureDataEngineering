@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "dfactoryecom"
+		},
+		"LS_SQL_PARQUT_connectionString": {
+			"value": ""
+		},
+		"LS_SQL_PARQUET_OUTPUT_ORDER_ITEM_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_PARQUET_OUTPUT_ORDER_ITEM_properties_typeProperties_url": {
+			"value": "https://adlssistorageaccount.dfs.core.windows.net/"
+		}
+	}
+}
