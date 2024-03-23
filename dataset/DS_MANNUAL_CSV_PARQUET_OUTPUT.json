@@ -1,10 +1,6 @@
 {
 	"name": "DS_MANNUAL_CSV_PARQUET_OUTPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_MANNUAL_CSV_PARQUET_OUTPUT",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
