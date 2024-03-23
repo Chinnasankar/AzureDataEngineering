@@ -1,0 +1,20 @@
+{
+	"name": "DS_SQL_PARQUET_OUTPUT_ORDER_ITEM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_PARQUET_OUTPUT_ORDER_ITEM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "order_items",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

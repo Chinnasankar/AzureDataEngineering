@@ -47,7 +47,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_SQL_PARQUET_ORDER_ITEM_OUTPUT",
+						"referenceName": "DS_SQL_PARQUET_OUTPUT_ORDER_ITEM",
 						"type": "DatasetReference"
 					}
 				]
