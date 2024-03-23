@@ -1,8 +1,0 @@
-{
-	"name": "DS_RESTAPI_CUSTOMER_INPUT",
-	"properties": {
-		"annotations": [],
-		"type": "RestResource",
-		"schema": []
-	}
-}
