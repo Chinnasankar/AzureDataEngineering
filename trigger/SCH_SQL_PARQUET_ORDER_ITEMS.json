@@ -1,0 +1,24 @@
+{
+	"name": "SCH_SQL_PARQUET_ORDER_ITEMS",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_SQL_PARQUT",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 14,
+				"startTime": "2024-03-24T20:22:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
