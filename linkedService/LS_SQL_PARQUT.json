@@ -1,0 +1,16 @@
+{
+	"name": "LS_SQL_PARQUT",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=VTIPL-C-PC927-L;initial catalog=EcomDB;user id=xx",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1YTgxYWUzMi00MjczLTRjNjMtOTg3Zi0wMTllNDc5NDJjNDkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1dfactorecom",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
