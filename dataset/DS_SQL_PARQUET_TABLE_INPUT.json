@@ -1,10 +1,6 @@
 {
 	"name": "DS_SQL_PARQUET_TABLE_INPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_SQL_PARQUET_TABLE_INPUT",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": []
